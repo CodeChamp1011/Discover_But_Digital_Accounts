@@ -4,7 +4,7 @@ import { DigestImage } from "@/assets/images/_images";
 export default function Discover() {
   return (
     <section>
-      <div className="flex flex-col py-55 px-[255px]">
+      <div className="flex flex-col py-55 lg:px-[255px] md:px-50 sm:px-50">
         <div className="bg-[#3B3B3B] p-[60px] rounded-[20px] w-full flex flex-row justify-center items-center h-[350px] gap-40">
           <Image src={DigestImage.Digest} alt="digest" />
           <div className="flex flex-col">

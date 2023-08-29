@@ -6,7 +6,7 @@ import { HeaderIcons } from "@/assets/icons/_icons";
 export default function Header() {
   return (
     <>
-      <div className="bg-black-gray flex flex-row justify-between py-[25px] px-[50px]">
+      <div className="bg-black-gray flex flex-row justify-between py-[25px] lg:px-[50px] md:px-30">
         <div className="flex flex-row justify-center items-center space-x-15">
           <Image
             className="h-[49px] w-[53px] max-h-[49px] max-w-[53px]"
@@ -17,7 +17,7 @@ export default function Header() {
             PVL Account Shop
           </span>
         </div>
-        <div className="flex flex-row justify-center items-center space-x-35">
+        <div className="lg:flex hidden flex-row justify-center items-center space-x-35">
           <span className="text-[16px] font-[600] text-center leading-3">
             Marketplace
           </span>
@@ -27,7 +27,7 @@ export default function Header() {
           <span className="text-[16px] font-[600] text-center leading-3">
             Cart
           </span>
-          <button className="flex flex-row w-[150px] min-w-[150px]  gradient-btn rounded-[15px] h-[50px] w-full gap-[12px] px-5 py-0 items-center justify-center">
+          <button className="flex flex-row w-[150px] min-w-[150px]  gradient-btn rounded-[15px] h-[50px] gap-[12px] px-5 py-0 items-center justify-center">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="20"

@@ -3,21 +3,27 @@ import { HomeImage } from "@/assets/images/_images";
 export default function Digest() {
   return (
     <section>
-      <div className="bg-black-gray px-[255px] flex flex-row justify-between items-center py-[120px]">
-        <div className="flex flex-col w-[510px] h-full items-start space-y-55">
-          <div className="flex flex-col min-w-max space-y-55">
-            <span className="text-[67px] font-[600] leading-3">
+      <div className="bg-black-gray lg:px-[255px] md:px-50 sm:px-50 flex flex-row justify-between items-center py-[120px]">
+        <div className="flex flex-col lg:w-[510px] md:w-[300px] h-full items-start space-y-55">
+          <div className="flex flex-col min-w-max space-y-5">
+            <span className="lg:text-[67px] md:text-[38px] sm:text-[28px] font-[600]">
               Discover & Buy
             </span>
-            <span className="text-[67px] font-[600] leading-3">Digital</span>
-            <span className="text-[67px] font-[600] leading-3">Accounts</span>
+            <div className="flex md:flex-col sm:flex-row md:space-x-0 space-x-10">
+              <span className="lg:text-[67px] md:text-[38px] sm:text-[28px] font-[600]">
+                Digital
+              </span>
+              <span className="lg:text-[67px] md:text-[38px] sm:text-[28px] font-[600]">
+                Accounts
+              </span>
+            </div>
           </div>
 
           <span className="text-[22px] font-[400]">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod
             sodales neque et porta. Donec ut diam dignissim
           </span>
-          <button className="flex flex-row w-[180px] min-w-[180px]  gradient-btn rounded-[20px] h-[40px] w-full gap-[12px] px-5 py-0 items-center justify-center">
+          <button className="flex flex-row w-[180px] min-w-[180px]  gradient-btn1 rounded-[20px] h-[40px] gap-[12px] px-5 py-0 items-center justify-center">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="20"
@@ -71,7 +77,7 @@ export default function Digest() {
         </div>
         <div>
           <Image
-            className="h-[537px] w-[510px] min-h-[537px] min-w-[510px] "
+            className="lg:h-[537px] md:h-[350px] lg:w-[510px] md:w-[350px] min-w-[250px] min-h-[250px]"
             src={HomeImage.Placeholer}
             alt="placeholder"
           />

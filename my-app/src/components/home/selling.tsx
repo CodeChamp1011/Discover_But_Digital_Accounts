@@ -4,10 +4,10 @@ import Image from "next/image";
 export default function Home() {
   return (
     <section>
-      <div className="flex flex-col mb-[55px]  px-[255px]">
+      <div className="flex flex-col mb-[55px] lg:px-[255px] md:px-50 sm:px-50">
         <div className="flex flex-row justify-between items-center">
           <div className="flex flex-col ">
-            <div className="flex flex-col w-[510px] min-w-max">
+            <div className="flex flex-col lg:w-[510px] md:w-auto sm:w-auto min-w-max">
               <span className="text-[38px] font-[600]">Top Selling</span>
               <span className="text-[22px] font-[400] mt-[20px]">
                 Check out OUR best selling accounts
