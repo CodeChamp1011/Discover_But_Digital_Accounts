@@ -1,0 +1,9 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .gradient-btn {
+    background: linear-gradient(149deg, #a259ff 0%, #ff6250 100%), #a259ff;
+  }
+}
