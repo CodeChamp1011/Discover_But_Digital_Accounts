@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 import { MarketList } from "./market_data";
 import Image from "next/image";
 import Logo from "@/assets/icons/logo_white.png";
@@ -33,30 +33,11 @@ export default function MarketPlace() {
             Browse through more than 240+ account types on the account
             marketplace.
           </p>
-          {/* <div className="relative mt-4 ">
-            <div className="absolute inset-y-0 left-0 flex items-center pl-3 pointer-events-none">
-              <svg
-                className="w-4 h-4 text-gray-500 dark:text-gray-400"
-                aria-hidden="true"
-                xmlns="http://www.w3.org/2000/svg"
-                fill="none"
-                viewBox="0 0 20 20"
-              >
-                <path
-                  stroke="currentColor"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  stroke-width="2"
-                  d="m19 19-4-4m0-7A7 7 0 1 1 1 8a7 7 0 0 1 14 0Z"
-                />
-              </svg>
-            </div> */}
           <input
             type="text"
             placeholder="Search for the one you want"
             className="h-60 block mt-20 rounded-2xl px-20 bg-transparent border border-gray-500"
           />
-          {/* </div> */}
         </div>
       </div>
       <Tabs value={activeTab}>
@@ -79,7 +60,6 @@ export default function MarketPlace() {
               }
             >
               {label}
-              {/* <div className="bg-[#858584] rounded-3xl">246</div> */}
             </Tab>
           ))}
         </TabsHeader>
