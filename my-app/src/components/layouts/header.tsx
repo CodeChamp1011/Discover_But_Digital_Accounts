@@ -2,14 +2,19 @@
 import React, { useState } from "react";
 import Image from "next/image";
 import { HeaderIcons } from "@/assets/icons/_icons";
+import { useRouter } from "next/router";
 
 export default function Header() {
+  const router = useRouter();
   const [isOpen, setIsOpen] = useState(false);
 
   return (
     <>
       <div className="bg-black-gray flex flex-row justify-between items-center py-[25px] lg:px-[50px] md:px-30 px-30 ">
-        <div className="flex flex-row justify-center items-center space-x-15">
+        <div
+          className="flex flex-row justify-center items-center space-x-15"
+          onClick={() => router.push("/")}
+        >
           <Image
             className="h-[49px] w-[53px] max-h-[49px] max-w-[53px]"
             src={HeaderIcons.Logo}
@@ -20,7 +25,10 @@ export default function Header() {
           </span>
         </div>
         <div className="lg:flex hidden flex-row justify-center items-center space-x-35">
-          <span className="text-[16px] font-[600] text-center leading-3">
+          <span
+            className="text-[16px] font-[600] text-center leading-3 cursor-pointer"
+            onClick={() => router.push("/market")}
+          >
             Marketplace
           </span>
           <span className="text-[16px] w-full font-[600] text-center leading-3">
@@ -50,7 +58,10 @@ export default function Header() {
                 fill="white"
               />
             </svg>
-            <span className="items-center text-[16px] font-[600] leading-3">
+            <span
+              className="items-center text-[16px] font-[600] leading-3"
+              onClick={() => router.push("/signup")}
+            >
               Sign Up
             </span>
           </button>

@@ -11,7 +11,7 @@ import {
 } from "@material-tailwind/react";
 
 export default function MarketPlace() {
-  const [activeTab, setActiveTab] = useState("html");
+  const [activeTab, setActiveTab] = useState("account_type");
   const data = [
     {
       label: "Account Types",
