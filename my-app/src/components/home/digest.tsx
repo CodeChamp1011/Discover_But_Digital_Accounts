@@ -3,9 +3,9 @@ import { HomeImage } from "@/assets/images/_images";
 export default function Digest() {
   return (
     <section>
-      <div className="bg-black-gray lg:px-[255px] md:px-50 sm:px-50 flex flex-row justify-between items-center py-[120px]">
+      <div className="bg-black-gray lg:px-[255px] md:px-50 px-50 flex md:flex-row flex-col justify-between items-center py-[120px]">
         <div className="flex flex-col lg:w-[510px] md:w-[300px] h-full items-start space-y-55">
-          <div className="flex flex-col min-w-max space-y-5">
+          <div className="flex flex-col min-w-max">
             <span className="lg:text-[67px] md:text-[38px] sm:text-[28px] font-[600]">
               Discover & Buy
             </span>

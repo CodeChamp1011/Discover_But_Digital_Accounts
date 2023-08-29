@@ -4,10 +4,10 @@ import { WorksData } from "@/assets/images/_images";
 export default function Works() {
   return (
     <section>
-      <div className="flex flex-col py-55 lg:px-[255px] md:px-50">
+      <div className="flex flex-col py-55 lg:px-[255px] md:px-50 px-50">
         <div className="flex flex-row justify-between items-center">
           <div className="flex flex-col ">
-            <div className="flex flex-col w-[510px] min-w-max">
+            <div className="flex flex-col md:w-[510px] w-auto min-w-max">
               <span className="text-[38px] font-[600]">How it works</span>
               <span className="text-[22px] font-[400] mt-[20px]">
                 Find out how to get started

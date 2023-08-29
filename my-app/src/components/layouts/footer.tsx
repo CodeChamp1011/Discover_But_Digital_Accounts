@@ -6,7 +6,7 @@ import { HeaderIcons } from "@/assets/icons/_icons";
 export default function Footer() {
   return (
     <>
-      <div className="bg-black-gray flex lg:flex-row md:flex-col w-full  lg:justify-center md:justify-start lg:items-center md:items-start lg:space-x-35 space-x-0 space-y-35 py-25 lg:px-0 md:px-50">
+      <div className="bg-black-gray flex lg:flex-row sm:flex-col w-full  lg:justify-center sm:justify-start lg:items-center sm:items-start lg:space-x-35 space-x-0 space-y-35 py-25 lg:px-0 px-50">
         <div className="lg:w-[320px] md:w-full items-start">
           <Image
             className="h-[49px] w-[53px] max-h-[49px] max-w-[53px]"

@@ -8,8 +8,8 @@ export default function Sale() {
         className="bg-cover bg-no-repeat bg-center w-full h-screen"
         style={{ backgroundImage: "url(/NFT_Highlight.png)" }}
       >
-        <div className="flex flex-row lg:px-[235px] md:px-[50px] sm:px-[50px] justify-between items-center">
-          <div className="flex flex-col lg:mt-[500px] md:mt-[200px] mb-[40px] space-y-30 justify-start items-start">
+        <div className="flex md:flex-row flex-col lg:px-[235px] md:px-[50px] px-[50px] justify-between items-center">
+          <div className="flex flex-col lg:mt-[500px] md:mt-[200px] mt-[100px] mb-[40px] space-y-30 justify-start items-start">
             <button className="rounded-[20px] bg-[#3B3B3B] px-[30px] py-[10px] justify-center">
               Trusted Seller
             </button>
@@ -40,7 +40,7 @@ export default function Sale() {
               </span>
             </button>
           </div>
-          <div className="flex flex-col items-start justify-center bg-[#3B3B3B] w-[295px] h-[144px] px-[30px] py-[30px] lg:mt-[500px] md:mt-[200px] rounded-[20px] mb-[40px] gap-10">
+          <div className="flex flex-col items-start justify-center bg-[#3B3B3B] w-[295px] h-[144px] px-[30px] py-[30px] lg:mt-[500px] md:mt-[200px] mt-[100px] rounded-[20px] mb-[40px] gap-10">
             <span>Sale ends in:</span>
             <div className="flex flex-row w-full space-x-15 justify-center items-center">
               <div className="flex flex-col items-center">
