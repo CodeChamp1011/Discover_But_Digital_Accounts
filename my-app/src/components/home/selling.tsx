@@ -4,10 +4,10 @@ import Image from "next/image";
 export default function Home() {
   return (
     <section>
-      <div className="flex flex-col mb-[55px]  px-[255px]">
-        <div className="flex flex-row justify-between items-center">
+      <div className="flex flex-col mb-[55px] lg:px-[255px] md:px-50 px-50">
+        <div className="flex md:flex-row flex-col justify-between items-center">
           <div className="flex flex-col ">
-            <div className="flex flex-col w-[510px] min-w-max">
+            <div className="flex flex-col lg:w-[510px] md:w-auto sm:w-auto min-w-max">
               <span className="text-[38px] font-[600]">Top Selling</span>
               <span className="text-[22px] font-[400] mt-[20px]">
                 Check out OUR best selling accounts
@@ -15,7 +15,7 @@ export default function Home() {
             </div>
           </div>
           <div>
-            <button className="flex flex-row w-[180px] min-w-[180px]  rounded-[10px] h-[40px] gap-[12px] px-5 py-0 items-center justify-center border-[#A259FF] border-2">
+            <button className="flex flex-row md:w-[180px] sm:w-fill-available min-w-[180px]  rounded-[10px] h-[40px] gap-[12px] px-5 py-0 items-center justify-center border-[#A259FF] border-2">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 width="20"

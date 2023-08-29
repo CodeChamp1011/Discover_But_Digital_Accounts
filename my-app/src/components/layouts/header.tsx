@@ -1,12 +1,14 @@
 /* eslint-disable jsx-a11y/no-distracting-elements */
-import React from "react";
+import React, { useState } from "react";
 import Image from "next/image";
 import { HeaderIcons } from "@/assets/icons/_icons";
 
 export default function Header() {
+  const [isOpen, setIsOpen] = useState(false);
+
   return (
     <>
-      <div className="bg-black-gray flex flex-row justify-between py-[25px] px-[50px]">
+      <div className="bg-black-gray flex flex-row justify-between items-center py-[25px] lg:px-[50px] md:px-30 px-30 ">
         <div className="flex flex-row justify-center items-center space-x-15">
           <Image
             className="h-[49px] w-[53px] max-h-[49px] max-w-[53px]"
@@ -17,7 +19,7 @@ export default function Header() {
             PVL Account Shop
           </span>
         </div>
-        <div className="flex flex-row justify-center items-center space-x-35">
+        <div className="lg:flex hidden flex-row justify-center items-center space-x-35">
           <span className="text-[16px] font-[600] text-center leading-3">
             Marketplace
           </span>
@@ -25,9 +27,9 @@ export default function Header() {
             About Us
           </span>
           <span className="text-[16px] font-[600] text-center leading-3">
-            Cart
+            Carts
           </span>
-          <button className="flex flex-row min-w-[150px]  gradient-btn rounded-[15px] h-[50px] w-full gap-[12px] px-5 py-0 items-center justify-center">
+          <button className="flex flex-row w-[150px] min-w-[150px]  gradient-btn rounded-[15px] h-[50px] gap-[12px] px-5 py-0 items-center justify-center">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="20"
@@ -52,6 +54,87 @@ export default function Header() {
               Sign Up
             </span>
           </button>
+        </div>
+        <div className="relative lg:hidden sm:inline-block text-left">
+          <div>
+            <button
+              type="button"
+              className="inline-flex justify-center w-full px-4 py-2 text-sm font-medium text-white bg-blue-600 rounded-md hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-100 focus:ring-blue-500"
+              id="options-menu"
+              aria-haspopup="true"
+              aria-expanded="true"
+              onClick={() => setIsOpen(!isOpen)}
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+              >
+                <path
+                  fill-rule="evenodd"
+                  clip-rule="evenodd"
+                  d="M3 12C3 11.5858 3.33579 11.25 3.75 11.25H20.25C20.6642 11.25 21 11.5858 21 12C21 12.4142 20.6642 12.75 20.25 12.75H3.75C3.33579 12.75 3 12.4142 3 12Z"
+                  fill="white"
+                />
+                <path
+                  fill-rule="evenodd"
+                  clip-rule="evenodd"
+                  d="M3 6C3 5.58579 3.33579 5.25 3.75 5.25H15C15.4142 5.25 15.75 5.58579 15.75 6C15.75 6.41421 15.4142 6.75 15 6.75H3.75C3.33579 6.75 3 6.41421 3 6Z"
+                  fill="white"
+                />
+                <path
+                  fill-rule="evenodd"
+                  clip-rule="evenodd"
+                  d="M3 18C3 17.5858 3.33579 17.25 3.75 17.25H15C15.4142 17.25 15.75 17.5858 15.75 18C15.75 18.4142 15.4142 18.75 15 18.75H3.75C3.33579 18.75 3 18.4142 3 18Z"
+                  fill="white"
+                />
+              </svg>
+            </button>
+          </div>
+
+          <div
+            className={`${
+              isOpen ? "block" : "hidden"
+            } origin-top-right absolute right-0 mt-2 w-56 rounded-md shadow-lg bg-black ring-1 ring-black ring-opacity-5 p-10`}
+          >
+            <div
+              className="py-1"
+              role="menu"
+              aria-orientation="vertical"
+              aria-labelledby="options-menu"
+            >
+              <a
+                href="#"
+                className="block px-4 py-2 text-lg text-gray-700 hover:bg-gray-100 hover:text-gray-900"
+                role="menuitem"
+              >
+                MarketPlace
+              </a>
+              <a
+                href="#"
+                className="block px-4 py-2 text-lg text-gray-700 hover:bg-gray-100 hover:text-gray-900"
+                role="menuitem"
+              >
+                About Us
+              </a>
+              <a
+                href="#"
+                className="block px-4 py-2 text-lg text-gray-700 hover:bg-gray-100 hover:text-gray-900"
+                role="menuitem"
+              >
+                Cart
+              </a>
+              <a
+                href="#"
+                className="block px-4 pt-10 text-lg text-gray-700 hover:bg-gray-100 hover:text-gray-900"
+                role="menuitem"
+              >
+                Sign Up
+              </a>
+            </div>
+          </div>
         </div>
       </div>
     </>

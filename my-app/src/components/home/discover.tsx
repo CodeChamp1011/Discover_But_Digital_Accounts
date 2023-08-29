@@ -4,8 +4,8 @@ import { DigestImage } from "@/assets/images/_images";
 export default function Discover() {
   return (
     <section>
-      <div className="flex flex-col py-55 px-[255px]">
-        <div className="bg-[#3B3B3B] p-[60px] rounded-[20px] w-full flex flex-row justify-center items-center h-[350px] gap-40">
+      <div className="flex flex-col py-55 lg:px-[255px] md:px-50 px-0">
+        <div className="bg-[#3B3B3B] p-[60px] rounded-[20px] w-full flex md:flex-row flex-col justify-center items-center md:h-[350px] min-h-fit gap-40">
           <Image src={DigestImage.Digest} alt="digest" />
           <div className="flex flex-col">
             <span className="text-[38px] font-[680]">
@@ -15,7 +15,9 @@ export default function Discover() {
               Get Exclusive Promotions & Updates Straight To Your inbox.
             </span>
             <div className="bg-white rounded-[20px] flex flex-row justify-between items-center pl-30 mt-[20px]">
-              <span className="text-[#000000] ">Enter your email here</span>
+              <span className="text-[#000000] min-w-max md:mr-5 mr-5">
+                Enter your email here
+              </span>
               <div className="flex flex-row justify-center items-center gradient-btn p-[10px] rounded-[20px] text-center gap-15">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
