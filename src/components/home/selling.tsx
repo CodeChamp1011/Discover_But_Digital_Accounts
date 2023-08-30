@@ -4,8 +4,8 @@ import Image from "next/image";
 export default function Home() {
   return (
     <section>
-      <div className="flex flex-col mb-[55px] lg:px-[255px] md:px-50 px-50">
-        <div className="flex md:flex-row flex-col justify-between items-center">
+      <div className="flex flex-col mb-[55px] xl:px-[255px] px-[20px]">
+        <div className="flex md:flex-row flex-col justify-between md:items-center items-start">
           <div className="flex flex-col ">
             <div className="flex flex-col lg:w-[510px] md:w-auto sm:w-auto min-w-max">
               <span className="text-[38px] font-[600]">Top Selling</span>
@@ -14,8 +14,8 @@ export default function Home() {
               </span>
             </div>
           </div>
-          <div>
-            <button className="flex flex-row md:w-[180px] sm:w-fill-available min-w-[180px]  rounded-[10px] h-[40px] gap-[12px] px-5 py-0 items-center justify-center border-[#A259FF] border-2">
+          <div className="md:w-[180px] w-full">
+            <button className="flex flex-row w-full md:w-[180px] rounded-[10px] h-[40px] gap-[12px] px-5 py-0 items-center justify-center border-[#A259FF] border-2">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 width="20"
@@ -58,14 +58,14 @@ export default function Home() {
           {SellingData.map((item, key) => (
             <div
               key={key}
-              className="bg-[#3B3B3B] relative p-[10px] rounded-[20px] w-full h-full min-w-[250px] min-h-[250px] flex justify-center items-center"
+              className="bg-[#3B3B3B] relative p-[10px] rounded-[20px] w-full h-full min-w-[250px] flex justify-center  items-center"
             >
               <Image
-                className="absolute top-20 left-30"
+                className="absolute md:top-20 top-40 left-30"
                 src={item.number}
                 alt={item.price}
               />
-              <div className="flex flex-col  p-20 items-center gap-20">
+              <div className="flex md:flex-col flex-row p-20 items-center gap-20 w-full md:justify-center justify-between">
                 <Image
                   src={item.url}
                   alt={item.title}

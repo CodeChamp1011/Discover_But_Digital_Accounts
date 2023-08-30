@@ -42,7 +42,7 @@ export default function CheckoutPage() {
         className="justify-center items-center flex flex-col"
       >
         <TabsHeader
-          className="rounded-none border-b border-blue-gray-50 bg-transparent p-0 w-[1050px]"
+          className="rounded-none border-b border-blue-gray-50 bg-transparent p-0 md:w-[1050px] w-auto"
           indicatorProps={{
             className:
               "bg-transparent border-b-2 border-gray-900 shadow-none rounded-none flex justify-center items-center",
@@ -55,8 +55,8 @@ export default function CheckoutPage() {
               onClick={() => setActiveTab(value)}
               className={
                 activeTab === value
-                  ? "text-white py-20 border-b border-white-100 mx-[100px]"
-                  : "text-[#858584] py-20 border-b-0 mx-[100px] "
+                  ? "text-white py-20 border-b border-white-100 md:mx-[100px] mx-20"
+                  : "text-[#858584] py-20 border-b-0 md:mx-[100px] mx-20 "
               }
             >
               <div className="flex flex-row md:w-full w-max gap-10">
@@ -108,7 +108,7 @@ export default function CheckoutPage() {
                 ))}
               </div>
               <div className="border border-dashed rounded-[30px] gradient-bg-purple  lg:w-[1050px] md:w-full w-full h-[529px] mt-[100px] pt-[21px] px-[52px] pb-[52px]">
-                <div className="flex flex-row w-full justify-around items-center mx-[30px]">
+                <div className="flex flex-row w-full justify-around items-center md:mx-[30px] mx-0">
                   <div className="flex flex-col justify-center items-center">
                     <span className="text-white text-[52px] font-[600]">
                       10.00$
@@ -116,16 +116,16 @@ export default function CheckoutPage() {
                     <span className="text-white text-[18px] font-[400]">
                       Pay by bank card
                     </span>
-                    <div className="flex flex-col w-full mt-[10px]">
+                    <div className="flex flex-col w-full mt-[10px] justify-center items-center">
                       <input
                         type="text"
                         placeholder="Card Number"
-                        className="h-[68px] w-100% block w-[500px] rounded-[5px] px-20 bg-white border border-gray-500 text-gray"
+                        className="h-[68px] w-100% block md:w-[500px] w-auto rounded-[10px] px-20 bg-white border border-gray-500 text-gray"
                       />
                       <input
                         type="text"
                         placeholder="Email Address"
-                        className="h-[68px] w-100% block w-[500px] rounded-[5px] px-20 bg-white border border-gray-500 text-gray mt-[10px]"
+                        className="h-[68px] w-100% block md:w-[500px] w-auto   rounded-[10px] px-20 bg-white border border-gray-500 text-gray mt-[10px]"
                       />
                     </div>
                     <hr className="bg-white border-white-[1px] w-full mt-[30px]" />
@@ -149,7 +149,7 @@ export default function CheckoutPage() {
                       </div>
                     </div>
                   </div>
-                  <div className="flex justify-center items-center">
+                  <div className="md:flex hidden justify-center items-center">
                     <Image
                       src={ImageData.Pul}
                       alt="pvl"

@@ -19,7 +19,7 @@ export default function Register() {
             <p className="md:text-[51px] text-[38px] font-semibold">
               Create Account
             </p>
-            <p className="md:text-[22px] text-[16px] font-normal md:w-[430px] w-[320px]">
+            <p className="md:text-[22px] text-[16px] font-normal lg:w-[430px] w-auto">
               Welcome! Enter Your Details And Start Buying Online Accounts For A
               Fraction Of The Price.
             </p>
@@ -172,7 +172,7 @@ export default function Register() {
               </div>
               <button
                 type="submit"
-                className="text-white mt-15 gradient-btn1  text-center text-[16px] font-semibold h-[46px] rounded-[20px]"
+                className="text-white mt-15 gradient-btn1  text-center text-[16px] font-semibold h-[46px] rounded-[20px] mb-35"
                 onClick={() => router.push("/login")}
               >
                 Create account

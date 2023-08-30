@@ -72,7 +72,7 @@ export default function MarketPlace() {
         className="justify-center items-center flex flex-col"
       >
         <TabsHeader
-          className="rounded-none border-b border-blue-gray-50 bg-transparent p-0 w-[1050px]"
+          className="rounded-none border-b border-blue-gray-50 bg-transparent p-0 md:w-[1050px] w-auto"
           indicatorProps={{
             className:
               "bg-transparent border-b-2 border-gray-900 shadow-none rounded-none flex justify-center items-center",
@@ -85,8 +85,8 @@ export default function MarketPlace() {
               onClick={() => setActiveTab(value)}
               className={
                 activeTab === value
-                  ? "text-white py-20 border-b border-white-100 mx-[100px]"
-                  : "text-[#858584] py-20 border-b-0 mx-[100px] "
+                  ? "text-white py-20 border-b border-white-100 md:mx-[100px] mx-20"
+                  : "text-[#858584] py-20 border-b-0 md:mx-[100px] mx-20"
               }
             >
               <div className="flex flex-row md:w-full w-max gap-10">
@@ -101,7 +101,7 @@ export default function MarketPlace() {
         <TabsBody>
           <TabPanel key="account_type" value="account_type">
             <div className="bg-[#3B3B3B] flex justify-center py-60">
-              <div className="grid grid-cols-1 gap-30 md:grid-cols-2 lg:grid-cols-4 lg:w-[1050px] md:w-[680px] w-[315px] ">
+              <div className="grid grid-cols-1 gap-30 md:grid-cols-2 lg:grid-cols-3 lg:w-[1050px] md:w-[680px] w-[315px] ">
                 {MarketList.map((item, index) => (
                   <div key={index} onClick={() => router.push("/detail")}>
                     <Image alt="" src={item.image} />

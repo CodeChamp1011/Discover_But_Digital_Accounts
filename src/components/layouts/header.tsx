@@ -21,7 +21,13 @@ export default function Header() {
             alt="logo"
           />
           <span className="text-[24px] font-[700] text-center leading-3">
-            PVL Account Shop
+            PVL
+          </span>
+          <span className="text-[24px] font-[700] text-center leading-3">
+            Account
+          </span>
+          <span className="text-[24px] font-[700] text-center leading-3">
+            Shop
           </span>
         </div>
         <div className="lg:flex hidden flex-row justify-center items-center space-x-35">
@@ -37,7 +43,7 @@ export default function Header() {
           <span className="text-[16px] font-[600] text-center leading-3">
             Carts
           </span>
-          <button className="flex flex-row w-[150px] min-w-[150px]  gradient-btn rounded-[15px] h-[50px] gap-[12px] px-5 py-0 items-center justify-center">
+          <button className="flex flex-row w-[150px] min-w-[150px]  gradient-btn rounded-[15px] h-[50px] gap-[12px] px-5 py-0 items-center justify-center" onClick={()=>router.push('/signup')}>
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="20"
@@ -60,7 +66,6 @@ export default function Header() {
             </svg>
             <span
               className="items-center text-[16px] font-[600] leading-3"
-              onClick={() => router.push("/signup")}
             >
               Sign Up
             </span>

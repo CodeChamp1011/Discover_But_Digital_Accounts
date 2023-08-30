@@ -4,7 +4,7 @@ import { WorksData } from "@/assets/images/_images";
 export default function Works() {
   return (
     <section>
-      <div className="flex flex-col py-55 lg:px-[255px] md:px-50 px-50">
+      <div className="flex flex-col py-55 xl:px-[255px] px-[20px]">
         <div className="flex flex-row justify-between items-center">
           <div className="flex flex-col ">
             <div className="flex flex-col md:w-[510px] w-auto min-w-max">
@@ -21,7 +21,7 @@ export default function Works() {
               key={key}
               className="bg-[#3B3B3B] p-[10px] rounded-[20px] w-full h-full min-w-[250px] min-h-[250px] flex justify-center items-center"
             >
-              <div className="flex flex-col  p-20 items-center gap-20">
+              <div className="flex md:flex-col flex-row  p-20 items-center gap-20">
                 <Image
                   src={item.url}
                   alt={item.title}

@@ -4,9 +4,13 @@ import { DigestImage } from "@/assets/images/_images";
 export default function Discover() {
   return (
     <section>
-      <div className="flex flex-col py-55 lg:px-[255px] md:px-50 px-0">
+      <div className="flex flex-col py-55 xl:px-[255px] px-[20px]">
         <div className="bg-[#3B3B3B] p-[60px] rounded-[20px] w-full flex md:flex-row flex-col justify-center items-center md:h-[350px] min-h-fit gap-40">
-          <Image src={DigestImage.Digest} alt="digest" />
+          <Image
+            src={DigestImage.Digest}
+            alt="digest"
+            className="lg:w-[425px] md:w-[250px] h-[310px]"
+          />
           <div className="flex flex-col">
             <span className="text-[38px] font-[680]">
               Join Our Weekly Digest

@@ -3,17 +3,17 @@ import { HomeImage } from "@/assets/images/_images";
 export default function Digest() {
   return (
     <section>
-      <div className="bg-black-gray lg:px-[255px] md:px-50 px-50 flex md:flex-row flex-col justify-between items-center py-[120px]">
+      <div className="bg-black-gray xl:px-[255px] px-[20px] flex md:flex-row flex-col justify-between items-center py-[120px]">
         <div className="flex flex-col lg:w-[510px] md:w-[300px] h-full items-start space-y-55">
           <div className="flex flex-col min-w-max">
-            <span className="lg:text-[67px] md:text-[38px] sm:text-[28px] font-[600]">
+            <span className="lg:text-[67px] text-[38px] sm:text-[28px] font-[600]">
               Discover & Buy
             </span>
             <div className="flex md:flex-col sm:flex-row md:space-x-0 space-x-10">
-              <span className="lg:text-[67px] md:text-[38px] sm:text-[28px] font-[600]">
+              <span className="lg:text-[67px] text-[38px] sm:text-[28px] font-[600]">
                 Digital
               </span>
-              <span className="lg:text-[67px] md:text-[38px] sm:text-[28px] font-[600]">
+              <span className="lg:text-[67px] text-[38px] sm:text-[28px] font-[600]">
                 Accounts
               </span>
             </div>
@@ -23,7 +23,7 @@ export default function Digest() {
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod
             sodales neque et porta. Donec ut diam dignissim
           </span>
-          <button className="flex flex-row w-[180px] min-w-[180px]  gradient-btn1 rounded-[20px] h-[40px] gap-[12px] px-5 py-0 items-center justify-center">
+          <button className="flex flex-row md:w-[180px] w-full gradient-btn1 rounded-[20px] h-[40px] gap-[12px] px-5 py-0 items-center justify-center">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="20"
@@ -56,7 +56,7 @@ export default function Digest() {
                 fill="white"
               />
             </svg>
-            <span className="items-center text-[16px] font-[600] leading-3">
+            <span className="items-center text-[16px] font-[600]">
               Get Started
             </span>
           </button>

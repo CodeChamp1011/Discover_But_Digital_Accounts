@@ -9,7 +9,7 @@ export default function Detail_Page() {
         <Image
           src={DetailData.Netflix}
           alt="netflix"
-          className="w-full h-[560px]"
+          className="w-full md:h-[560px] h-auto"
         />
       </div>
     </section>

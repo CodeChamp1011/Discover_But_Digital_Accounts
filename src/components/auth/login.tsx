@@ -19,7 +19,7 @@ export default function Login() {
             <p className="md:text-[51px] text-[38px] font-semibold">
               Login To Your Account
             </p>
-            <p className="md:text-[22px] text-[16px] font-normal md:w-[400px] w-[280px]">
+            <p className="md:text-[22px] text-[16px] font-normal lg:w-[400px] w-[280px]">
               Log in to your account to start buying online accounts for a
               fraction of the price!
             </p>
@@ -106,7 +106,7 @@ export default function Login() {
               </button>
             </div>
           </form>
-          <div className="md:px-0 px-30">
+          <div className="md:px-0 px-30 mb-35">
             <p className="text-[16px] font-normal text-white">
               Do you have an account?{" "}
               <a

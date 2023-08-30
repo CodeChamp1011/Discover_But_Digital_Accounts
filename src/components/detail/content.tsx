@@ -4,9 +4,9 @@ export default function Detail() {
   const router = useRouter();
   return (
     <section className="flex justify-center">
-      <div className="flex flex-col space-y-30 lg:w-[1050px] md:w-[680px] w-[315px]">
-        <div className="flex flex-row justify-between items-center ">
-          <div className="flex flex-col space-y-15">
+      <div className="flex flex-col space-y-30 lg:w-[1050px] w-auto lg:px-0 px-20">
+        <div className="flex md:flex-row flex-col justify-between items-center ">
+          <div className="flex flex-col space-y-15 w-full">
             <div className="flex flex-col">
               <span className="text-[51px] font-[600]">Netflix Account</span>
               <span className="text-[#858584] text-[22px] font-[400]">
@@ -22,7 +22,7 @@ export default function Detail() {
               </div>
             </div>
           </div>
-          <div className="bg-[#3B3B3B] rounded-[20px] w-[295px] h-[178px] flex flex-col p-[10px] space-y-10 items-center justify-center">
+          <div className="bg-[#3B3B3B] rounded-[20px] md:w-[295px] h-[178px] flex flex-col p-[10px] space-y-10 items-center justify-center w-full">
             <button
               className="gradient-btn1 rounded-[20px] py-10 pz-[20px] w-full"
               onClick={() => router.push("/checkout")}
