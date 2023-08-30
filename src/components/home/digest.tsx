@@ -4,7 +4,10 @@ export default function Digest() {
   return (
     <section>
       <div className="bg-black-gray xl:px-[255px] px-[20px] flex md:flex-row flex-col justify-between items-center py-[120px]">
-        <div className="flex flex-col lg:w-[510px] md:w-[300px] h-full items-start space-y-55">
+        <div
+          className="flex flex-col lg:w-[510px] md:w-[300px] h-full items-start space-y-55"
+          data-aos="fade-up-right"
+        >
           <div className="flex flex-col min-w-max">
             <span className="lg:text-[67px] text-[38px] sm:text-[28px] font-[600]">
               Discover & Buy
@@ -78,6 +81,7 @@ export default function Digest() {
         <div>
           <Image
             className="lg:h-[537px] md:h-[350px] lg:w-[510px] md:w-[350px] min-w-[250px] min-h-[250px]"
+            data-aos="fade-up-left"
             src={HomeImage.Placeholer}
             alt="placeholder"
           />

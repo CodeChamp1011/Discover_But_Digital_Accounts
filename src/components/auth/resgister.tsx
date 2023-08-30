@@ -6,7 +6,10 @@ export default function Register() {
   const router = useRouter();
   return (
     <section className="gradient-bg-purple-reverse">
-      <div className="grid md:grid-cols-2 grid-cols-1 gap-60">
+      <div
+        className="grid md:grid-cols-2 grid-cols-1 gap-60"
+        data-aos="fade-down"
+      >
         <div className="flex justify-center">
           <Image
             src={Logo}

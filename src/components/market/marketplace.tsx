@@ -101,7 +101,10 @@ export default function MarketPlace() {
         <TabsBody>
           <TabPanel key="account_type" value="account_type">
             <div className="bg-[#3B3B3B] flex justify-center py-60">
-              <div className="grid grid-cols-1 gap-30 md:grid-cols-2 lg:grid-cols-3 lg:w-[1050px] md:w-[680px] w-[315px] ">
+              <div
+                className="grid grid-cols-1 gap-30 md:grid-cols-2 lg:grid-cols-3 lg:w-[1050px] md:w-[680px] w-[315px]"
+                data-aos="fade-right"
+              >
                 {MarketList.map((item, index) => (
                   <div key={index} onClick={() => router.push("/detail")}>
                     <Image alt="" src={item.image} />

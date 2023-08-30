@@ -4,7 +4,10 @@ import Image from "next/image";
 export default function Home() {
   return (
     <section>
-      <div className="flex flex-col mb-[55px] xl:px-[255px] px-[20px]">
+      <div
+        className="flex flex-col mb-[55px] xl:px-[255px] px-[20px]"
+        data-aos="fade-up"
+      >
         <div className="flex md:flex-row flex-col justify-between md:items-center items-start">
           <div className="flex flex-col ">
             <div className="flex flex-col lg:w-[510px] md:w-auto sm:w-auto min-w-max">

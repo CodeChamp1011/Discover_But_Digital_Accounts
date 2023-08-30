@@ -36,7 +36,7 @@ export default function Footer() {
             <span className="text-[22px] font-[700]  text-center leading-3">
               Join Our Weekly Digest
             </span>
-            <span className="text-gray-500 text-[16px] font-[400]  text-center leading-3">
+            <span className="text-gray-500 text-[16px] font-[400]  md:text-center text-left leading-3">
               Get exclusive promotions & updates straight to your inbox.
             </span>
             <div className="bg-white rounded-[20px] flex flex-row justify-between items-center pl-30 mt-[20px]">
