@@ -15,10 +15,19 @@ const config: Config = withMT({
         "gradient-conic":
           "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
       },
+      width: {
+        inherit: "inherit",
+      },
+      borderStyle: {
+        dotted: "dotted",
+        outset: "outset",
+        dashed: "dashed",
+      },
     },
     colors: {
       "black-gray": "#2B2B2B",
       white: "#FFF",
+      purple: "#A259FF",
     },
     spacing: {
       0: "0",

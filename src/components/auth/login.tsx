@@ -1,9 +1,11 @@
 import Image from "next/image";
+import { useRouter } from "next/router";
 import Logo from "@/assets/icons/logo_white.png";
 
 export default function Login() {
+  const router = useRouter();
   return (
-    <section>
+    <section className="gradient-bg-purple-reverse">
       <div className="grid md:grid-cols-2 grid-cols-1 gap-60">
         <div className="flex justify-center">
           <Image
@@ -98,7 +100,7 @@ export default function Login() {
               </div>
               <button
                 type="submit"
-                className="text-white mt-15 gradient-submit text-center text-[16px] font-semibold h-[46px] bg-gradient-to-r from-purple-600 to-blue-500"
+                className="text-white mt-15 gradient-submit text-center text-[16px] font-semibold h-[46px] gradient-btn1 rounded-[20px]"
               >
                 Log in
               </button>
@@ -107,7 +109,11 @@ export default function Login() {
           <div className="md:px-0 px-30">
             <p className="text-[16px] font-normal text-white">
               Do you have an account?{" "}
-              <a href="#sign_up" className="text-[#A259FF]">
+              <a
+                href="#sign_up"
+                className="text-[#A259FF]"
+                onClick={() => router.push("/signup")}
+              >
                 Sign up here!
               </a>
             </p>

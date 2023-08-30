@@ -1,7 +1,6 @@
 import React, { useState } from "react";
-import { MarketList } from "./market_data";
+import { Data, ImageData } from "./checkout_data";
 import Image from "next/image";
-import { useRouter } from "next/router";
 import Logo from "@/assets/icons/logo_white.png";
 import {
   Tabs,
@@ -11,8 +10,7 @@ import {
   TabPanel,
 } from "@material-tailwind/react";
 
-export default function MarketPlace() {
-  const router = useRouter();
+export default function CheckoutPage() {
   const [activeTab, setActiveTab] = useState("account_type");
   const data = [
     {
@@ -31,40 +29,12 @@ export default function MarketPlace() {
       <div className=" w-full flex justify-center">
         <div className="text-white lg:w-[1050px] md:w-[680px] w-[315px] py-80 flex flex-col justify-center gap-5">
           <p className="md:text-[51px] text-[28px] font-semibold">
-            Browse Marketplace
+            Proceed to Checkout
           </p>
           <p className="md:text-[22px] text-[16px] font-normal">
-            Browse through more than 240+ account types on the account
-            marketplace.
+            Secure checkout sample text - all transactions are processed safely
+            and encrypted etc
           </p>
-          <div className="relative mt-20">
-            <input
-              type="text"
-              placeholder="Search for the one you want"
-              className="h-60 block w-full rounded-2xl px-20 bg-transparent border border-gray-500"
-            />
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              width="24"
-              height="24"
-              viewBox="0 0 24 24"
-              fill="none"
-              className="absolute top-1/2 transform -translate-y-1/2 right-15" // position it at center vertically and a little bit inside from the right edge
-            >
-              <path
-                fill-rule="evenodd"
-                clip-rule="evenodd"
-                d="M10.875 3.75C6.93997 3.75 3.75 6.93997 3.75 10.875C3.75 14.81 6.93997 18 10.875 18C14.81 18 18 14.81 18 10.875C18 6.93997 14.81 3.75 10.875 3.75ZM2.25 10.875C2.25 6.11154 6.11154 2.25 10.875 2.25C15.6385 2.25 19.5 6.11154 19.5 10.875C19.5 15.6385 15.6385 19.5 10.875 19.5C6.11154 19.5 2.25 15.6385 2.25 10.875Z"
-                fill="white"
-              />
-              <path
-                fill-rule="evenodd"
-                clip-rule="evenodd"
-                d="M15.9135 15.9133C16.2064 15.6204 16.6813 15.6204 16.9742 15.9133L21.5304 20.4695C21.8233 20.7624 21.8233 21.2373 21.5304 21.5302C21.2375 21.8231 20.7627 21.8231 20.4698 21.5302L15.9135 16.9739C15.6206 16.681 15.6206 16.2062 15.9135 15.9133Z"
-                fill="white"
-              />
-            </svg>
-          </div>
         </div>
       </div>
       <Tabs
@@ -100,10 +70,10 @@ export default function MarketPlace() {
         </TabsHeader>
         <TabsBody>
           <TabPanel key="account_type" value="account_type">
-            <div className="bg-[#3B3B3B] flex justify-center py-60">
-              <div className="grid grid-cols-1 gap-30 md:grid-cols-2 lg:grid-cols-4 lg:w-[1050px] md:w-[680px] w-[315px] ">
-                {MarketList.map((item, index) => (
-                  <div key={index} onClick={() => router.push("/detail")}>
+            <div className="gradient-bg-purple flex flex-col items-center justify-center py-60">
+              <div className="grid grid-cols-1 gap-30 md:grid-cols-2 lg:grid-cols-3 lg:w-[1050px] md:w-[680px] w-[315px] ">
+                {Data.map((item, index) => (
+                  <div key={index}>
                     <Image alt="" src={item.image} />
                     <div className="px-30 py-20 text-white space-y-25">
                       <div>
@@ -136,6 +106,62 @@ export default function MarketPlace() {
                     </div>
                   </div>
                 ))}
+              </div>
+              <div className="border border-dashed rounded-[30px] gradient-bg-purple  lg:w-[1050px] md:w-full w-full h-[529px] mt-[100px] pt-[21px] px-[52px] pb-[52px]">
+                <div className="flex flex-row w-full justify-around items-center mx-[30px]">
+                  <div className="flex flex-col justify-center items-center">
+                    <span className="text-white text-[52px] font-[600]">
+                      10.00$
+                    </span>
+                    <span className="text-white text-[18px] font-[400]">
+                      Pay by bank card
+                    </span>
+                    <div className="flex flex-col w-full mt-[10px]">
+                      <input
+                        type="text"
+                        placeholder="Card Number"
+                        className="h-[68px] w-100% block w-[500px] rounded-[5px] px-20 bg-white border border-gray-500 text-gray"
+                      />
+                      <input
+                        type="text"
+                        placeholder="Email Address"
+                        className="h-[68px] w-100% block w-[500px] rounded-[5px] px-20 bg-white border border-gray-500 text-gray mt-[10px]"
+                      />
+                    </div>
+                    <hr className="bg-white border-white-[1px] w-full mt-[30px]" />
+                    <div className="flex flex-col mt-[30px] w-full">
+                      <span className="text-[12px] font-[400] text-white">
+                        Other Payment Methods
+                      </span>
+                      <div className="grid grid-cols-4 gap-30  w-full mt-[30px]">
+                        <button className="bg-black p-[10px] rounded-[10px] flex justify-center items-center">
+                          <Image src={ImageData.Apple} alt="apple" />
+                        </button>
+                        <button className="bg-[#6461FC] p-[10px] rounded-[10px] flex justify-center items-center">
+                          <Image src={ImageData.Stripe} alt="stripe" />
+                        </button>
+                        <button className="bg-[#CCECFF] p-[10px] rounded-[10px] flex justify-center items-center">
+                          <Image src={ImageData.Paypal} alt="paypal" />
+                        </button>
+                        <button className="bg-[#FF7E00] p-[10px] rounded-[10px] flex justify-center items-center">
+                          <Image src={ImageData.Crypto} alt="crypto" />
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                  <div className="flex justify-center items-center">
+                    <Image
+                      src={ImageData.Pul}
+                      alt="pvl"
+                      className="w-[314px] h-[350px] min-w-[314px]"
+                    />
+                  </div>
+                </div>
+              </div>
+              <div className="flex justify-center">
+                <button className="gradient-btn1 text-white w-[238px] h-[51px] rounded-[20px] mt-[30px]">
+                  Proceed!
+                </button>
               </div>
             </div>
           </TabPanel>

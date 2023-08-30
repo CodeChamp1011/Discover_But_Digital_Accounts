@@ -12,4 +12,18 @@
   .gradient-btn1 {
     background: linear-gradient(170deg, #a259ff 0%, #377df7 100%), #a259ff;
   }
+  .gradient-bg-purple {
+    background: linear-gradient(
+      rgba(162, 89, 255, 0.5),
+      10%,
+      rgba(59, 59, 59, 1)
+    );
+  }
+  .gradient-bg-purple-reverse {
+    background: linear-gradient(
+      rgba(59, 59, 59, 0.5),
+      10%,
+      rgba(162, 89, 255, 0.3)
+    );
+  }
 }
