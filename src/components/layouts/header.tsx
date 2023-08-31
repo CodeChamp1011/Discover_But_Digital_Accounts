@@ -12,7 +12,7 @@ export default function Header() {
     <>
       <div className="bg-black-gray flex flex-row justify-between items-center py-[25px] lg:px-[50px] md:px-30 px-30 ">
         <div
-          className="flex flex-row justify-center items-center space-x-15"
+          className="flex flex-row justify-center items-center space-x-15 cursor-pointer"
           onClick={() => router.push("/")}
         >
           <Image
@@ -43,7 +43,10 @@ export default function Header() {
           <span className="text-[16px] font-[600] text-center leading-3">
             Carts
           </span>
-          <button className="flex flex-row w-[150px] min-w-[150px]  gradient-btn rounded-[15px] h-[50px] gap-[12px] px-5 py-0 items-center justify-center" onClick={()=>router.push('/signup')}>
+          <button
+            className="flex flex-row w-[150px] min-w-[150px]  gradient-btn rounded-[15px] h-[50px] gap-[12px] px-5 py-0 items-center justify-center"
+            onClick={() => router.push("/signup")}
+          >
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="20"
@@ -64,9 +67,7 @@ export default function Header() {
                 fill="white"
               />
             </svg>
-            <span
-              className="items-center text-[16px] font-[600] leading-3"
-            >
+            <span className="items-center text-[16px] font-[600] leading-3">
               Sign Up
             </span>
           </button>
@@ -75,7 +76,7 @@ export default function Header() {
           <div>
             <button
               type="button"
-              className="inline-flex justify-center w-full px-4 py-2 text-sm font-medium text-white bg-blue-600 rounded-md hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-100 focus:ring-blue-500"
+              className="inline-flex justify-center w-full px-4 py-2 text-sm font-medium text-white"
               id="options-menu"
               aria-haspopup="true"
               aria-expanded="true"
@@ -123,7 +124,7 @@ export default function Header() {
             >
               <a
                 href="#"
-                className="block px-4 py-2 text-lg text-gray-700 hover:bg-gray-100 hover:text-gray-900"
+                className="block px-4 py-2 text-lg text-white-700 hover:bg-gray-100 hover:text-gray-900"
                 role="menuitem"
                 onClick={() => router.push("/market")}
               >
@@ -131,14 +132,14 @@ export default function Header() {
               </a>
               <a
                 href="#"
-                className="block px-4 py-2 text-lg text-gray-700 hover:bg-gray-100 hover:text-gray-900"
+                className="block px-4 py-2 text-lg text-white-700 hover:bg-gray-100 hover:text-gray-900"
                 role="menuitem"
               >
                 About Us
               </a>
               <a
                 href="#"
-                className="block px-4 py-2 text-lg text-gray-700 hover:bg-gray-100 hover:text-gray-900"
+                className="block px-4 py-2 text-lg text-white-700 hover:bg-gray-100 hover:text-gray-900"
                 role="menuitem"
                 onClick={() => router.push("/detail")}
               >
@@ -146,7 +147,7 @@ export default function Header() {
               </a>
               <a
                 href="#"
-                className="block px-4 pt-10 text-lg text-gray-700 hover:bg-gray-100 hover:text-gray-900"
+                className="block px-4 pt-10 text-lg text-white-700 hover:bg-gray-100 hover:text-gray-900"
                 role="menuitem"
                 onClick={() => router.push("/signup")}
               >

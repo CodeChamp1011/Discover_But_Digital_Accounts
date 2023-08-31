@@ -1,7 +1,6 @@
-import Image from "next/image";
-// import { NftHighLight } from "@/assets/images/_images";
-
+import { useRouter } from "next/router";
 export default function Sale() {
+  const router = useRouter();
   return (
     <section>
       <div
@@ -19,7 +18,10 @@ export default function Sale() {
           </div>
           <div className="flex md:flex-row flex-col-reverse w-full justify-between items-center md:mt-0 mt-50">
             <div className="flex flex-col">
-              <button className="bg-white flex flex-row justify-center items-center rounded-[20px] px-[45px] py-[18px] gap-10">
+              <button
+                className="bg-white flex flex-row justify-center items-center rounded-[20px] px-[45px] py-[18px] gap-10"
+                onClick={() => router.push("/market")}
+              >
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   width="20"

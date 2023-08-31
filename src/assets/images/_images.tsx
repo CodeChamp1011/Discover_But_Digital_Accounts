@@ -53,15 +53,18 @@ export const WorksData = [
     url: Icon1,
     title: "Register to PVL",
     subTitle: "Register or log in into PVL Shop",
+    navigate: "/signup",
   },
   {
     url: Icon2,
     title: "Explore accounts",
     subTitle: "Explore and find the accounts you want",
+    navigate: "/market",
   },
   {
     url: Icon3,
     title: "Buy Account You want!",
     subTitle: "Buy the account you want for cheap!",
+    navigate: "/market",
   },
 ];

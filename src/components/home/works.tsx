@@ -1,7 +1,9 @@
 import Image from "next/image";
+import { useRouter } from "next/router";
 import { WorksData } from "@/assets/images/_images";
 
 export default function Works() {
+  const router = useRouter();
   return (
     <section>
       <div
@@ -22,7 +24,8 @@ export default function Works() {
           {WorksData.map((item, key) => (
             <div
               key={key}
-              className="bg-[#3B3B3B] p-[10px] rounded-[20px] w-full h-full min-w-[250px] min-h-[250px] flex justify-center items-center"
+              className="bg-[#3B3B3B] p-[10px] rounded-[20px] w-full h-full min-w-[250px] min-h-[250px] flex justify-center items-center cursor-pointer"
+              onClick={() => router.push(`${item.navigate}`)}
             >
               <div className="flex md:flex-col flex-row  p-20 items-center gap-20">
                 <Image

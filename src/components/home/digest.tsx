@@ -3,7 +3,7 @@ import { HomeImage } from "@/assets/images/_images";
 export default function Digest() {
   return (
     <section>
-      <div className="bg-black-gray xl:px-[255px] px-[20px] flex md:flex-row flex-col justify-between items-center py-[120px]">
+      <div className="bg-black-gray xl:px-[255px] px-[20px] flex md:flex-row flex-col justify-between items-center py-[120px] mt-[-10px]">
         <div
           className="flex flex-col lg:w-[510px] md:w-[300px] h-full items-start space-y-55"
           data-aos="fade-up-right"
@@ -21,11 +21,18 @@ export default function Digest() {
               </span>
             </div>
           </div>
-
           <span className="text-[22px] font-[400]">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod
-            sodales neque et porta. Donec ut diam dignissim
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean
+            semper erat et faucibus accumsan.
           </span>
+          <div className="md:hidden flex">
+            <Image
+              className="lg:h-[537px] md:h-[350px] lg:w-[510px] md:w-[350px] min-w-[250px] min-h-[250px]"
+              data-aos="fade-up-left"
+              src={HomeImage.Placeholer}
+              alt="placeholder"
+            />
+          </div>
           <button className="flex flex-row md:w-[180px] w-full gradient-btn1 rounded-[20px] h-[40px] gap-[12px] px-5 py-0 items-center justify-center">
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -78,7 +85,7 @@ export default function Digest() {
             </div>
           </div>
         </div>
-        <div>
+        <div className="md:flex hidden">
           <Image
             className="lg:h-[537px] md:h-[350px] lg:w-[510px] md:w-[350px] min-w-[250px] min-h-[250px]"
             data-aos="fade-up-left"
